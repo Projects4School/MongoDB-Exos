@@ -1,4 +1,4 @@
-1) ```js
+1. ```js
     db.runCommand( { collMod: "salles",
         validator: {
             $jsonSchema: {
@@ -24,7 +24,7 @@
     ```
     Il y'a une erreur lorsqu'on execute la requête d'insersion car il manque le code postal pour valider.
 
-2) ```js
+2. ```js
     db.runCommand( { collMod: "salles",
         validator: {
             $jsonSchema: {

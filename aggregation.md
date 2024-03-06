@@ -1,4 +1,4 @@
-1) ```js
+1. ```js
     var pipeline = [
         {
             $match: {
@@ -30,7 +30,7 @@
     db.salles.aggregate(pipeline)
     ````
 
-2) ```js
+2. ```js
     var pipeline = [
         {
             $addFields: {
@@ -53,7 +53,7 @@
     db.salles.aggregate(pipeline)
     ```
 
-3) ```js
+3. ```js
     var pipeline = [
         {
             $project: {
@@ -76,7 +76,7 @@
     db.salles.aggregate(pipeline)
     ```
 
-4) ```js
+4. ```js
     var pipeline = [
         {
             $unwind: "$styles"
@@ -99,7 +99,7 @@
     db.salles.aggregate(pipeline)
     ```
 
-5) ```js
+5. ```js
     var pipeline = [
         {
             $bucket: {
@@ -115,7 +115,7 @@
     db.salles.aggregate(pipeline)
     ```
 
-6) ```js
+6. ```js
     var pipeline = [
         {
             $match: {

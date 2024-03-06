@@ -1,4 +1,4 @@
-1) ```js
+1. ```js
     var KilometresEnRadians = function(kilometres){ 
         var rayonTerrestreEnKm = 6371; 
         return kilometres / rayonTerrestreEnKm; 
@@ -32,7 +32,7 @@
         }
     )
 
-2) ```js
+2. ```js
     var marseille = {"type": "Point", "coordinates": [43.300000, 5.400000]} 
     
     db.salles.find(
@@ -51,7 +51,7 @@
     )
     ```
 
-3) ```js
+3. ```js
     var polygone = { 
         "type": "Polygon", 
         "coordinates": [ 

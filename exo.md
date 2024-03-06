@@ -1,4 +1,4 @@
-1) ```js
+1. ```js
     db.salles.find(
         { 
             smac: { 
@@ -12,7 +12,7 @@
     )
     ```
 
-2) ```js
+2. ```js
     db.salles.find(
         { 
             capacite: { 
@@ -26,7 +26,7 @@
     )
     ```
 
-3) ```js
+3. ```js
     db.salles.find(
         { 
             "adresse.numero": { 
@@ -39,7 +39,7 @@
     )
     ```
 
-4) ```js
+4. ```js
     db.salles.find(
         { 
             avis: { 
@@ -53,7 +53,7 @@
     )
     ```
 
-5) ```js
+5. ```js
     db.salles.find(
         { 
             styles: "blues"
@@ -65,7 +65,7 @@
     )
     ```
 
-6) ```js
+6. ```js
     db.salles.find(
         {
             "styles.0": "blues"
@@ -77,7 +77,7 @@
     )
     ```
 
-7) ```js
+7. ```js
     db.salles.find(
         {
             "adresse.codePostal": { $regex: /^84.*/ },
@@ -90,7 +90,7 @@
     )
     ```
 
-8) ```js
+8. ```js
     db.salles.find(
         {
             $or: [
@@ -104,7 +104,7 @@
     )
     ```
 
-9) ```js
+9. ```js
     db.salles.find(
         {
             "avis.note": { $gte: 8, $lte: 10 }
@@ -116,7 +116,7 @@
     )
     ```
 
-10) ```js
+10. ```js
     db.salles.find(
         {
             "avis.date": { $gt: new Date("15/11/2019") }
@@ -128,7 +128,7 @@
     )
     ```
 
-11) ```js
+11. ```js
     db.salles.find(
         {
             $expr: {
@@ -146,18 +146,18 @@
     )
     ```
 
-13) ```js
+13. ```js
     db.salles.distinct('adresse.codePostal')
     ```
 
-14) ```js
+14. ```js
     db.salles.updateMany(
         {},
         { $inc: { capacite: 100 } }
     )
     ````
 
-15) ```js
+15. ```js
     db.salles.updateMany(
         {
             styles: {
@@ -172,7 +172,7 @@
     )
     ```
 
-16) ```js
+16. ```js
     db.salles.updateMany(
         {
             _id: { $nin: [2,3] }
@@ -185,7 +185,7 @@
     )
     ```
 
-17) ```js
+17. ```js
     db.salles.updateOne(
         {
             _id: 3
@@ -200,7 +200,7 @@
     )
     ```
 
-18) ```js
+18. ```js
     db.salles.updateMany(
         {
             nom: { $regex: /^P.*/i },
@@ -217,7 +217,7 @@
         }
     )
 
-19) ```js
+19. ```js
     db.salles.updateMany(
         {
             nom: { $regex: /[^aeiou]+$/ },
